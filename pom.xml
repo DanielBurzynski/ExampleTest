@@ -11,7 +11,6 @@
     <properties>
         <maven.compiler.source>14</maven.compiler.source>
         <maven.compiler.target>14</maven.compiler.target>
-        <environment>${environment}</environment>
     </properties>
 
     <dependencies>
@@ -49,7 +48,7 @@
 
                         <browser>${Browser}</browser>
                         <baseUri>${baseUri}</baseUri>
-<!--                        <environment>${environment}</environment>-->
+                        <environment>${environment}</environment>
 
                     </systemPropertyVariables>
                 </configuration>

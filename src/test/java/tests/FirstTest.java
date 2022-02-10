@@ -3,10 +3,10 @@ package tests;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-@Parameters("Environment")
+
 public class FirstTest {
 
-    @Parameters({"Environment","baseUri"})
+    @Parameters({"environment","baseUri"})
     @BeforeTest
     public void beforeMethod(String environment, String baseUri){
         System.out.println(environment);
