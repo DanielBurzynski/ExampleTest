@@ -11,6 +11,7 @@
     <properties>
         <maven.compiler.source>14</maven.compiler.source>
         <maven.compiler.target>14</maven.compiler.target>
+        <environment>${environment}</environment>
     </properties>
 
     <dependencies>
@@ -41,12 +42,14 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <suiteXmlFiles>
-<!--                        <suiteXmlFile>testng.xml</suiteXmlFile>-->
+                        <!--                        <suiteXmlFile>testng.xml</suiteXmlFile>-->
                         <suiteXmlFile>${testngpath}</suiteXmlFile>
                     </suiteXmlFiles>
                     <systemPropertyVariables>
 
-                    <browser>${Browser}</browser>
+                        <browser>${Browser}</browser>
+                        <baseUri>${baseUri}</baseUri>
+<!--                        <environment>${environment}</environment>-->
 
                     </systemPropertyVariables>
                 </configuration>
